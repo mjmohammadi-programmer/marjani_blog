@@ -517,9 +517,9 @@
                     @foreach($posts as $post)
                         <div class="col-md-4">
                             <div class="mn-img">
-                                <img src="img/news-350x223-1.jpg"/>
+                                <img src="/img/news-350x223-1.jpg"/>
                                 <div class="mn-title">
-                                    <a href="">{{$post->title}}</a>
+                                    <a href="/post/{{$post->id}}">{{$post->title}}</a>
                                 </div>
                             </div>
                         </div>

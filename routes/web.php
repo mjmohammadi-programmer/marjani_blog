@@ -27,3 +27,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/calculate',[\App\Http\Controllers\HomeController::class,'calculate']);*/
 
 Route::get('/',[\App\Http\Controllers\HomeController::class,'index']);
+
+Route::get('/post/{id}',[\App\Http\Controllers\PostController::class,'show']);
