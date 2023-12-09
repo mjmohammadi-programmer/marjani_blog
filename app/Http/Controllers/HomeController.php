@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Post;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -14,11 +15,21 @@ class HomeController extends Controller
     public function index()
     {
         $posts = Post::all();
+        $last_posts = Post::query()->limit(4)->orderBy('id','desc')->get();
+        $categories = Category::all();
+
+        /*$category_test = Category::query()->where('id' , '1')->first();
+        $category_posts_test = $category_test->posts;
+        dd($category_posts_test);*/
 
         /*return view('index',compact(['posts']));
         return view('index')->with(['posts' => $posts]);*/
 
-        return view('index', ['posts' => $posts]);
+        return view('index', [
+            'posts' => $posts,
+            'last_posts' => $last_posts,
+            'categories' => $categories,
+        ]);
     }
 
     /*public function index(Request $request){
