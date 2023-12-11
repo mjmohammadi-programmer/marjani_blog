@@ -28,4 +28,6 @@ Route::get('/calculate',[\App\Http\Controllers\HomeController::class,'calculate'
 
 Route::get('/',[\App\Http\Controllers\HomeController::class,'index']);
 
+Route::get('/post/new',[\App\Http\Controllers\PostController::class,'create']);
+Route::post('/post/store',[\App\Http\Controllers\PostController::class,'store']);
 Route::get('/post/{id}',[\App\Http\Controllers\PostController::class,'show']);

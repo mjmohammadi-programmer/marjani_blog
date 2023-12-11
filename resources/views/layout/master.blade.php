@@ -54,14 +54,14 @@
             <div class="col-lg-3 col-md-4">
                 <div class="b-logo">
                     <a href="index.html">
-                        <img src="img/logo.png" alt="Logo">
+                        <img src="/img/logo.png" alt="Logo">
                     </a>
                 </div>
             </div>
             <div class="col-lg-6 col-md-4">
                 <div class="b-ads">
                     <a href="https://htmlcodex.com">
-                        <img src="img/ads-1.jpg" alt="Ads">
+                        <img src="/img/ads-1.jpg" alt="Ads">
                     </a>
                 </div>
             </div>
@@ -88,6 +88,7 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav mr-auto">
                     <a href="/" class="nav-item nav-link active">Home</a>
+                    <a href="/post/new" class="nav-item nav-link">New Post</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
                         <div class="dropdown-menu">
