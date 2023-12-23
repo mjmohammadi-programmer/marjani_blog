@@ -89,6 +89,8 @@
                 <div class="navbar-nav mr-auto">
                     <a href="/" class="nav-item nav-link active">Home</a>
                     <a href="/post/new" class="nav-item nav-link">New Post</a>
+                    <a href="/categories" class="nav-item nav-link">Categories</a>
+                    <a href="/category/new" class="nav-item nav-link">New Category</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
                         <div class="dropdown-menu">

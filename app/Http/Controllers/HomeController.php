@@ -16,7 +16,7 @@ class HomeController extends Controller
     {
         $posts = Post::all();
         $last_posts = Post::query()->limit(4)->orderBy('id','desc')->get();
-        $categories = Category::all();
+        $categories = Category::query()->limit(4)->get();
 
         /*$category_test = Category::query()->where('id' , '1')->first();
         $category_posts_test = $category_test->posts;

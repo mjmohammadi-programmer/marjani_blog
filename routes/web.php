@@ -31,3 +31,10 @@ Route::get('/',[\App\Http\Controllers\HomeController::class,'index']);
 Route::get('/post/new',[\App\Http\Controllers\PostController::class,'create']);
 Route::post('/post/store',[\App\Http\Controllers\PostController::class,'store']);
 Route::get('/post/{id}',[\App\Http\Controllers\PostController::class,'show']);
+
+Route::get('/categories',[\App\Http\Controllers\CategoryController::class,'index']);
+Route::get('/category/new',[\App\Http\Controllers\CategoryController::class,'create']);
+Route::post('/category/store',[\App\Http\Controllers\CategoryController::class,'store']);
+Route::get('/category/edit/{id}',[\App\Http\Controllers\CategoryController::class,'edit']);
+Route::patch('/category/update/{id}',[\App\Http\Controllers\CategoryController::class,'update']);
+Route::delete('/category/delete/{id}',[\App\Http\Controllers\CategoryController::class,'destroy']);
